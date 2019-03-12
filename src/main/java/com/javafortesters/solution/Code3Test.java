@@ -1,8 +1,12 @@
 package com.javafortesters.solution;
 
-public class testS {
+import org.junit.jupiter.api.Test;
 
-    static String mergeStrings(String a, String b) {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class Code3Test {
+
+    public static String mergeStrings(String a, String b) {
 
         // Get the lenghts of both stings  and check which of them is smaller
         int lengthOfStringA = a.length();
@@ -41,5 +45,14 @@ public class testS {
         finalMergeString = mergeString +  biggerString.substring(mergeLength,biggerString.length());
         System.out.println(finalMergeString);
         return finalMergeString;
+    }
+
+    @Test
+    public void mergeStringsTest() {
+
+        // Get the lenghts of both stings  and check which of them is smaller
+        String result = mergeStrings("abc","defghjk");
+        assertEquals(result,"adbecfghjk");
+
     }
 }

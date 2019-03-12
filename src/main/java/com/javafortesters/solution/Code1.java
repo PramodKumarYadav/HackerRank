@@ -1,6 +1,6 @@
 package com.javafortesters.solution;
 
-public class test3 {
+public class Code1 {
 }
 
 abstract class Animal {
